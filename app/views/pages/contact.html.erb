@@ -1,0 +1,13 @@
+<h2>Contact 🚀</h2>
+
+<form action="/contact" method="get">
+  <input 
+    type="text" 
+    name="member" 
+    value="<%= params[:member] %>"
+    placeholder="Who are you looking for?"
+  >
+  <input type="submit">
+</form>
+
+<%= link_to "Retour", root_path %>
