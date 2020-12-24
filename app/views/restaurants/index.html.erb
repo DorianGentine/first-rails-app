@@ -1,0 +1,8 @@
+<h2>Nos restaurants sont :</h2>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Retour", root_path %>
