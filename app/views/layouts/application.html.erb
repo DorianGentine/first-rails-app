@@ -12,7 +12,10 @@
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
     <h1>Ceci est ma première app rails</h1>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
     <p>Un footer très simple</p>
   </body>

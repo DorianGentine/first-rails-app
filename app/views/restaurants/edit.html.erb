@@ -1,9 +1,10 @@
-<%= form_for(@restaurant) do |f| %>
+<%= simple_form_for(@restaurant) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :address %>
   <%= f.text_field :address %>
   <%= f.label :rating %>
   <%= f.number_field :rating %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
